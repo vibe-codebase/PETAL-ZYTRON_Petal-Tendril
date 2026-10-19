@@ -1,0 +1,5 @@
+import { LEVELS } from './levels';
+
+/** The title screen replays this solver-made climb of Old Gate, one steering choice every 0.15 s. Regenerate if the garden changes (the tests check it still works). */
+export const MENU_LEVEL = LEVELS.find((l) => l.id === 'spring-3')!;
+export const MENU_PLAN: (number | null)[] = [-1.5, -1.5, -0.9, -0.45, 0, -0.45, 0, 0, -1.5, -0.45, null, 0.45, null, null, null, null, null, null, null, null, null, null, null, -1.5, -1.5, 0, 0, null, 0.45, 0.9, null, 0.45, -1.5, 0.45, 0.45, 0.9, null, 0.45, 0.9, -1.5, 0.45, 0.45, -1.5, 0.45, 0.45, 0.45, -1.5, 0.45, 0.45, 0.45, -1.5, 0.45, -1.5, 0.45, 0.45, -1.5, 0.45, 0.45, -1.5, 0.45, 0.9, -1.5, -1.5, 0.45, 0.9, null, 0.45, -1.5, null, null, null, null, null, null, null, 0.45, -1.5, null, null, -1.5, -1.5, -0.9, -0.45, 0, null, 0, null, null, null, null, null, -1.5, 0, -1.5, -0.45, 0, 0.45, -1.5, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, -1.5, -1.5, 0, 0, null, null, null, null, null, null, null, -1.5, 0, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null];

@@ -1,0 +1,81 @@
+{
+  "expo": {
+    "name": "Petal Tendril",
+    "slug": "petal-zytron",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "platforms": [
+      "android"
+    ],
+    "icon": "./assets/icons/app-icon.png",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/key-art/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#efe6d2"
+    },
+    "android": {
+      "package": "com.petalzytron.petaltendril",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.VIBRATE"
+      ],
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icons/adaptive-foreground.png",
+        "backgroundImage": "./assets/icons/adaptive-background.png",
+        "backgroundColor": "#efe6d2"
+      },
+      "blockedPermissions": [
+        "android.permission.SYSTEM_ALERT_WINDOW",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.READ_PHONE_STATE",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "com.google.android.gms.permission.AD_ID"
+      ],
+      "allowBackup": true
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 36,
+            "targetSdkVersion": 36,
+            "buildToolsVersion": "36.0.0",
+            "enableMinifyInReleaseBuilds": true,
+            "enableShrinkResourcesInReleaseBuilds": true,
+            "enablePngCrunchInReleaseBuilds": true,
+            "usesCleartextTraffic": false
+          }
+        }
+      ],
+      [
+        "expo-screen-orientation",
+        {
+          "initialOrientation": "PORTRAIT_UP"
+        }
+      ],
+      "./plugins/withLocalWeb",
+      "./plugins/withReleaseHardening"
+    ],
+    "assetBundlePatterns": [
+      "assets/**/*"
+    ],
+    "extra": {
+      "gameSlug": "tendril",
+      "offlineFirst": true,
+      "company": "PETAL ZYTRON",
+      "eas": {
+        "projectId": "896a1064-7b44-49b1-910c-e6005c4ec7eb"
+      }
+    },
+    "owner": "899-903"
+  }
+}
